@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    background-color: #ffe4c4;
+    padding: 50px 20px;
+}
+
+.hero p{
+    font-size: 30px;
+}
+
+
+h1{
+    font-size: 70px;
+}
+
+ .cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cake-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 0px 0px;
+}
+
+.cake-card p{
+    font-size: 20px;
+    color: green;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cake-card h4{
+    text-align: left;
+    padding-left: 20px;
+}
+ .cake-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.cake-weight-selection {
+    margin-top: 20px;
+}
+
+.weight-options label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#selected-weight {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.cart-item {
+    margin: 10px 0;
+}
+
+.cart-item h4 {
+    display: inline;
+}
+
+.cart-item button {
+    margin-left: 10px;
+    background-color: #f8b400;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

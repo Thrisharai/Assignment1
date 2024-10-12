@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cake11.html">Cakes</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cake-details">
+        <div class="cake-images">
+            <img src="caramel butterscotch cherry cake.webp" alt="Chocolate Cake" width="400px" height="400px">
+            
+        </div>
+        <div class="cake-info">
+            <h1>Caramel Butterscotch Cake</h1>
+            <p><b>Product Description</b><br>
+                Cream, caramel glazed butterscotch cake, generously sprinkled with golden
+                 butterscotch crunch & topped with a red cherry.<br>
+              </p>
+            <p><b>"In Our Chef's Word"</b><br>
+                It's a dessert that’s both comforting and elegant, with a melt-in-your-mouth experience.<br>
+                 </p>
+            <p>Price: $800</p>
+            <div class="cake-weight-selection">
+                <h3>Select Weight:</h3>
+                <div class="weight-options">
+                    <label>
+                        <input type="radio" name="weight" value="0.5" onclick="selectWeight(this.value)"> 0.5 Kg
+                    </label>
+                    <label>
+                        <input type="radio" name="weight" value="1" onclick="selectWeight(this.value)"> 1 Kg
+                    </label>
+                    <label>
+                        <input type="radio" name="weight" value="1.5" onclick="selectWeight(this.value)"> 1.5 Kg
+                    </label>
+                    <label>
+                        <input type="radio" name="weight" value="2" onclick="selectWeight(this.value)"> 2 Kg
+                    </label>
+                </div>
+                <p id="selected-weight">Selected Weight: None</p>
+            </div>
+            
+            
+            <h3>Choose Flavour</h3>
+            <label for="flavor"></label>
+            <select id="flavor">
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+            </select>
+            <br>
+            <div class="cake-message">
+                <h3>Cake Message</h3>
+                <input type="text" id="fname" name="name" placeholder="Enter Message On Cake">
+            </div>
+            <div class="location">
+                <h3>Delivery Location</h3>
+                <input type="text" id="fname" name="name" placeholder="Enter Your City">
+            </div>
+            <div class="cart">
+            <button onclick="addToCart({name: 'Chocolate Cake', price: 25})" class="btn">Add to Cart</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>Contact Us: info@cakeshop.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
